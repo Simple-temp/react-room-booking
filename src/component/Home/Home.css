@@ -1,0 +1,41 @@
+header
+{
+    background-image: url(../../img/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:70vh;
+    background-position: center;
+    position:relative;
+}
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-brand 
+{
+    color:#fff;
+}
+.navbar-light .navbar-nav .nav-link 
+{
+    color:rgb(207, 207, 207);
+}
+.height
+{
+    margin-top:10%;
+    color:#fff;
+}
+.height h1 
+{
+    font-size:49px;
+    padding-bottom:20px;
+}
+.height p 
+{
+    font-size:18px;
+    font-weight: 600;
+}
+section
+{
+    padding:85px 0;
+}
+.row
+{
+    --bs-gutter-x: 0rem;
+}
