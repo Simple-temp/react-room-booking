@@ -1,7 +1,20 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import './Room.css';
+import { makeStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
+
+const useStyles = makeStyles((theme) => ({
+    root: {
+      '& > *': {
+        margin: theme.spacing(1),
+      },
+    },
+  }));
+
 const Room = (props) => {
+
+    const classes = useStyles();
     const {title,bedTypeId,capacity,description,price,img} = props.room;
 
     return (
@@ -16,8 +29,9 @@ const Room = (props) => {
                         <p>Description :{description}</p>
                         <p>Capacity :{capacity}</p>
                         <div className="footer d-flex justify-content-between">
-                        <p>Price :{price}</p>
-                        <button className='btn btn-primary'> <Link to={`/booking/${bedTypeId}`}>Room Book</Link> </button>
+                        <p>Price :${price}</p>
+                        {/* <button className='btn btn-primary'> <Link to={`/booking/${bedTypeId}`} className='room-btn'>Room Book</Link> </button> */}
+                        <Button variant="contained" color="primary"><Link to={`/booking/${bedTypeId}`} className='room-btn'>Room Book</Link></Button>
                         </div>
                     </div>
                 </div>

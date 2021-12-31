@@ -1,11 +1,9 @@
 import React from 'react';
+import { Navigate, useLocation } from 'react-router-dom';
 
 const PrivateRoute = () => {
-    return (
-        <div>
-            <h1>privateroute</h1>
-        </div>
-    );
+    const location = useLocation();
+    return <Navigate to="/login" state={{ from: location }} replace />;
 };
 
 export default PrivateRoute;

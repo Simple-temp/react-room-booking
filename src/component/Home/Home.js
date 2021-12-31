@@ -82,7 +82,7 @@ const Home = () => {
                 <div className="row">
                     <div className="col-lg-8 col-md-8 col-sm-12 text-center mx-auto height">
                         <h1>Welcome Our Website,,</h1>
-                        <p>Your favourite Services are here !!</p>
+                        <p>Your favourite room services are here !!</p>
                     </div>
                 </div>
         </header>
