@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Room from '../Room/Room';
 import './Home.css';
 const Home = () => {
@@ -65,13 +66,13 @@ const Home = () => {
                             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                <a class="nav-link" href="">Home</a>
+                                <Link class="nav-link" to="/home">Home</Link>
                                 </li>
                                 <li class="nav-item">
-                                <a class="nav-link" href="">Login</a>
+                                <Link class="nav-link" to="/login">Login</Link>
                                 </li>
                                 <li class="nav-item">
-                                <a class="nav-link" href="">Booking</a>
+                                <Link class="nav-link" to="/booking">Booking</Link>
                                 </li>
                             </ul>
                             </div>
