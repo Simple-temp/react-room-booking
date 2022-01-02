@@ -1,0 +1,17 @@
+.booking
+{
+    margin-top:180px;
+    border:1px solid #00c7ec;
+    padding:28px 8px;
+}
+.booking h1 
+{
+    color:green;
+    padding-bottom:15px;
+}
+.gobtn,
+.gobtn:hover
+{
+    text-decoration: none;
+    color:#fff;
+}

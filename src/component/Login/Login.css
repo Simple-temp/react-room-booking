@@ -4,6 +4,14 @@
 }
 .mb-3 span i 
 {
-    font-size:24px;
+    font-size:54px;
     cursor:pointer;
+    color:rgb(0, 204, 255);
+    border:1px solid #00c7ec;
+    padding:10px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
 }

@@ -28,7 +28,7 @@ const Login = () => {
     
     const navigate = useNavigate();
     const location = useLocation();
-    const from = location.state?.from?.pathname || "/";
+    const from = location.state?.from?.pathname || "/home";
 
     const haldleGoogleSignIn = () =>
     {
@@ -51,9 +51,9 @@ const Login = () => {
     return (
         <div className='container'>
             <div className="from-box col-lg-8 col-md-8 col-sm-12 mx-auto login-from">
-                <h1 className='text-center text-primary'>Login <InsertEmoticonSharpIcon></InsertEmoticonSharpIcon> </h1>
+                <h1 className='text-center text-primary'>tmr priyo-tomar jonno Google a sign korte hobe j vai <InsertEmoticonSharpIcon></InsertEmoticonSharpIcon> </h1>
                 <form>
-                    <div class="mb-3">
+                    {/* <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Email address</label>
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
                         <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
@@ -65,13 +65,13 @@ const Login = () => {
                     <div class="mb-3 form-check">
                         <input type="checkbox" class="form-check-input" id="exampleCheck1"/>
                         <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                    </div>
-                    <div class="mb-3">
-                        <span onClick={haldleGoogleSignIn} ><i class="fab fa-google"></i></span>
-                    </div>
-                    {/* <button type="submit" class="btn btn-primary">Submit</button> */}
-                    <Button variant="contained" color="primary">Submit<InsertEmoticonSharpIcon></InsertEmoticonSharpIcon></Button>
+                    </div> */}
+                    {/* <button type="submit" class="btn btn-primary">Submit</button>
+                    <Button variant="contained" color="primary">Submit<InsertEmoticonSharpIcon></InsertEmoticonSharpIcon></Button> */}
                 </form>
+                <div class="mb-3 text-center">
+                        <span onClick={haldleGoogleSignIn} ><i class="fab fa-google ico"></i></span>
+                </div>
             </div>
         </div>
     );
