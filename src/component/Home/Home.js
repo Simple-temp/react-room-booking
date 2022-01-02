@@ -11,17 +11,17 @@ const Home = () => {
     const rooms = [
         {
             bedTypeId : 1 ,
-            title : "Signle bed only",
+            title : "Signle bed only ",
             capacity : 1 ,
-            description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam maxime excepturi dolor necessitatibus totam explicabo laudantium ipsa praesentium, suscipit nam!",
+            description : " jhogra hole oke akai thakte hobe bondhu . bow er sathe johra korte hoy na pilij",
             price : 199,
             img : "https://imagizer.imageshack.com/img922/5099/Ql6fVp.jpg",
         },
         {
             bedTypeId : 2 ,
-            title : "Double bed only",
+            title : "Double bed for both",
             capacity : 6 ,
-            description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam maxime excepturi dolor necessitatibus totam explicabo laudantium ipsa praesentium, suscipit nam!",
+            description : "congratulation brother jhogra korba r bow dare marba na kmn taile r thakbe na ",
             price : 399,
             img : "https://imagizer.imageshack.com/img923/5205/tYx06G.jpg",
         },
@@ -29,15 +29,15 @@ const Home = () => {
             bedTypeId : 3 ,
             title : "One signle bed 2 double bed",
             capacity : 5 ,
-            description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam maxime excepturi dolor necessitatibus totam explicabo laudantium ipsa praesentium, suscipit nam!",
+            description : "Jodi ridoy bashai mehoman ashe tahole tho thakar bebostha korte hobe tai na ",
             price : 499,
             img : "https://imagizer.imageshack.com/img923/7444/Oa6OPD.jpg",
         },
         {
             bedTypeId : 2 ,
-            title : "Double",
+            title : "Double bed ",
             capacity : 2 ,
-            description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam maxime excepturi dolor necessitatibus totam explicabo laudantium ipsa praesentium, suscipit nam!",
+            description : "rag kore dui jon dui bed a thaklee ... baper na agula hoy husband wife er majhe ",
             price : 299,
             img : "https://imagizer.imageshack.com/img924/7449/2c4QQs.jpg",
         },
@@ -45,15 +45,15 @@ const Home = () => {
             bedTypeId : 2 ,
             title : "Double bed double person",
             capacity : 4 ,
-            description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam maxime excepturi dolor necessitatibus totam explicabo laudantium ipsa praesentium, suscipit nam!",
+            description : " Ridoy er boyosh jokhon prai jani na koto hobee ",
             price : 599,
             img : "https://imagizer.imageshack.com/img923/3627/5OY54Y.jpg",
         },
         {
             bedTypeId : 3 ,
-            title : "Double bed double person",
+            title : "Double bed no one person",
             capacity : 6 ,
-            description : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam maxime excepturi dolor necessitatibus totam explicabo laudantium ipsa praesentium, suscipit nam!",
+            description : " dui betai mara mari kore bari theke cole geche but vara diye jaini ",
             price : 899,
             img : "https://imagizer.imageshack.com/img922/4954/47UDNg.jpg",
         },
@@ -88,7 +88,7 @@ const Home = () => {
                 </div>
                 <div className="row">
                     <div className="col-lg-8 col-md-8 col-sm-12 text-center mx-auto height">
-                        <h1>Welcome Our Ridoy wedding party,,</h1>
+                        <h1>Welcome Our Ridoy<FavoriteIcon></FavoriteIcon>Shumi wedding party,,</h1>
                         <p>Mr Ridoy here your favourite room services are here !!</p>
                     </div>
                 </div>
