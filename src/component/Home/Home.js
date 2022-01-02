@@ -15,6 +15,7 @@ const Home = () => {
             capacity : 1 ,
             description : " jhogra hole oke akai thakte hobe bondhu . bow er sathe johra korte hoy na pilij",
             price : 199,
+            place:"Uganda",
             img : "https://imagizer.imageshack.com/img922/5099/Ql6fVp.jpg",
         },
         {
@@ -23,6 +24,7 @@ const Home = () => {
             capacity : 6 ,
             description : "congratulation brother jhogra korba r bow dare marba na kmn taile r thakbe na ",
             price : 399,
+            place:"Uganda",
             img : "https://imagizer.imageshack.com/img923/5205/tYx06G.jpg",
         },
         {
@@ -31,6 +33,7 @@ const Home = () => {
             capacity : 5 ,
             description : "Jodi ridoy bashai mehoman ashe tahole tho thakar bebostha korte hobe tai na ",
             price : 499,
+            place:"Uganda",
             img : "https://imagizer.imageshack.com/img923/7444/Oa6OPD.jpg",
         },
         {
@@ -47,6 +50,7 @@ const Home = () => {
             capacity : 4 ,
             description : " Ridoy er boyosh jokhon prai jani na koto hobee ",
             price : 599,
+            place:"Uganda",
             img : "https://imagizer.imageshack.com/img923/3627/5OY54Y.jpg",
         },
         {
@@ -55,6 +59,7 @@ const Home = () => {
             capacity : 6 ,
             description : " dui betai mara mari kore bari theke cole geche but vara diye jaini ",
             price : 899,
+            place:"Uganda",
             img : "https://imagizer.imageshack.com/img922/4954/47UDNg.jpg",
         },
     ]

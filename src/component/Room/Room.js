@@ -20,7 +20,7 @@ const Room = (props) => {
 
     const classes = useStyles();
 
-    const {title,bedTypeId,capacity,description,price,img} = props.room;
+    const {title,bedTypeId,capacity,description,price,img,place} = props.room;
 
     return (
         <>
@@ -32,6 +32,7 @@ const Room = (props) => {
                         <p> <HotelIcon></HotelIcon> : <span>{bedTypeId}</span> </p>
                         <p>Title :{title}</p>
                         <p>Description :{description}</p>
+                        <p>Place : {place}</p>
                         <p><FaceSharpIcon></FaceSharpIcon> : <span>{capacity}</span></p>
                         <div className="footer d-flex justify-content-between">
                         <p><AttachMoneySharpIcon></AttachMoneySharpIcon> : <span>{price}</span></p>
