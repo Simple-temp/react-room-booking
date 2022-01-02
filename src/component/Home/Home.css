@@ -46,3 +46,16 @@ section
 {
     --bs-gutter-x: 0rem;
 }
+small
+{
+    margin-top:8px;
+}
+small img 
+{
+    width:30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}

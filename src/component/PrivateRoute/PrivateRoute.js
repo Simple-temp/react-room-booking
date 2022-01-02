@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Navigate, useLocation } from 'react-router-dom';
+import { UserContext } from '../../App';
 
-const PrivateRoute = () => {
+const PrivateRoute = ({children}) => {
+    const [loggedInuser , setloggedInuser] = useContext ( UserContext );
     const location = useLocation();
-    return <Navigate to="/login" state={{ from: location }} replace />;
+    if (!loggedInuser.name)
+    {
+        return <Navigate to="/login" state={{ from: location }} replace />;
+    }
+        return children ;
 };
 
 export default PrivateRoute;

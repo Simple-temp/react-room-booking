@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { UserContext } from '../../App';
 import Room from '../Room/Room';
 import './Home.css';
 const Home = () => {
+    const [loggedInuser , setloggedInuser] = useContext( UserContext )
     const rooms = [
         {
             bedTypeId : 1 ,
@@ -74,6 +76,7 @@ const Home = () => {
                                 <li class="nav-item">
                                 <Link class="nav-link" to="/login">Login</Link>
                                 </li>
+                                <small><img src={loggedInuser.img} alt="" /></small>
                             </ul>
                             </div>
                         </div>
