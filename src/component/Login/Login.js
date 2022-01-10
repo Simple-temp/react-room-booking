@@ -5,7 +5,7 @@ import Button from '@material-ui/core/Button';
 import InsertEmoticonSharpIcon from '@material-ui/icons/InsertEmoticonSharp';
 import { initializeApp } from "firebase/app";
 import  firebaseConfig   from "./firebaseConfig";
-import { GoogleAuthProvider , getAuth , signInWithPopup } from "firebase/auth";
+import { GoogleAuthProvider , getAuth , signInWithPopup  } from "firebase/auth";
 import { UserContext } from '../../App';
 import { useLocation, useNavigate } from 'react-router-dom';
 
@@ -38,6 +38,7 @@ const Login = () => {
                 const {displayName , email , photoURL} = result.user;
                 const signedInuser = {name:displayName , email:email , img:photoURL };
                 setloggedInuser(signedInuser);
+                authToken();
                 navigate(from, { replace: true });
             }).catch((error) => {
                 const errorCode = error.code;
@@ -47,11 +48,23 @@ const Login = () => {
             });
     }
 
+    const authToken = () =>
+    {
+        const auth = getAuth(); 
+        auth.currentUser.getIdToken(/* forceRefresh */auth,true).then(function(idToken) {
+            console.log(idToken);
+            sessionStorage.setItem("token", idToken);
+          }).catch(function(error) {
+            // Handle error
+          });
+    }
+
+
     const classes = useStyles();
     return (
         <div className='container'>
             <div className="from-box col-lg-8 col-md-8 col-sm-12 mx-auto login-from">
-                <h1 className='text-center text-primary'>tmr priyo-tomar jonno Google a sign korte hobe j vai <InsertEmoticonSharpIcon></InsertEmoticonSharpIcon> </h1>
+                <h1 className='text-center text-primary'>Sign In with Google<InsertEmoticonSharpIcon></InsertEmoticonSharpIcon> </h1>
                 <form>
                     {/* <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Email address</label>
