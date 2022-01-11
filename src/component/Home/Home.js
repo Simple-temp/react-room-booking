@@ -93,7 +93,7 @@ const Home = () => {
                 </div>
                 <div className="row">
                     <div className="col-lg-8 col-md-8 col-sm-12 text-center mx-auto height">
-                        <h1>Welcome Our Ridoy<FavoriteIcon></FavoriteIcon>Shumi wedding party,,</h1>
+                        <h1>Welcome Our Ridoy<FavoriteIcon></FavoriteIcon>Sumi wedding party,,</h1>
                         <p>Mr Ridoy here your favourite room services are here !!</p>
                     </div>
                 </div>
