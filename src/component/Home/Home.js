@@ -13,7 +13,7 @@ const Home = () => {
             bedTypeId : 1 ,
             title : "Signle bed only ",
             capacity : 1 ,
-            description : " jhogra hole oke akai thakte hobe bondhu . bow er sathe johra korte hoy na pilij",
+            description : " Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis incidunt quod eos!",
             price : 199,
             place:"Uganda",
             img : "https://imagizer.imageshack.com/img922/5099/Ql6fVp.jpg",
@@ -94,7 +94,7 @@ const Home = () => {
                 <div className="row">
                     <div className="col-lg-8 col-md-8 col-sm-12 text-center mx-auto height">
                         <h1>Welcome to our party party,,</h1>
-                        <p>Your favourite room services are here !!</p>
+                        <p>Your favourite room services are here !</p>
                     </div>
                 </div>
         </header>
